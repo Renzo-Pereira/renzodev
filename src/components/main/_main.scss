@@ -1,0 +1,168 @@
+/*********************************************------------------------------Home------------------------------*********************************************/
+
+.home {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+
+.home div h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.2rem;
+}
+
+.home button {
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  color: aliceblue;
+  border: aliceblue 0.1rem solid;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 2rem 1rem 0 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.home img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+/*********************************************------------------------------About------------------------------*********************************************/
+
+.proyectos {
+  width: 60%;
+  margin: 0 auto 6rem auto;
+}
+
+.proyectos h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.proyectos div {
+  display: flex;
+  gap: 1rem;
+}
+
+.proyectos article {
+  background-color: rgb(43, 44, 48);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.233);
+  border-radius: 0.5rem;
+}
+
+.proyectos article img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+}
+
+.proyectos .proyecto-descripcion {
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.proyectos .proyecto-descripcion .lenguajes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lenguajes span {
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  padding: 0.1rem;
+  font-weight: 500;
+}
+
+.about {
+  width: 60%;
+  margin: 0 auto 6rem auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+.about h2 span {
+  color: #4158d0;
+}
+
+.about div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto 6rem auto;
+  gap: 1rem;
+}
+
+.education section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education section article {
+  background-color: rgb(43, 44, 48);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.233);
+  padding: 0.5rem;
+  width: 200%;
+  border-radius: 0.5rem;
+}
+
+.education section article h4 {
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.education section article h4,
+h5,
+p {
+  margin: 0.5rem 0;
+}
+
+.education section article span {
+  margin-right: 0.5rem;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies-icons img {
+  width: 4rem;
+}

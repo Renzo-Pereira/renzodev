@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(32, 33, 36);
+    color: aliceblue;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+nav img{
+    width: 4rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
