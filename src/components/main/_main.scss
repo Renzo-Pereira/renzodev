@@ -166,3 +166,27 @@ p {
 .technologies-icons img {
   width: 4rem;
 }
+
+
+@media (max-width: 1366px){
+.home{
+  flex-direction: column;
+}
+
+.home img{
+  margin-top: 1rem;
+  width: 10rem;
+}
+
+  .proyectos div {
+    flex-direction: column;
+  }
+
+  .education {
+    flex-direction: column;
+  }
+
+  .education section article {
+    width: 100%;
+  }
+}

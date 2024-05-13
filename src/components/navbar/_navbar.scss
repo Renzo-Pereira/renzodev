@@ -3,14 +3,15 @@ body{
     color: aliceblue;
 }
 
-nav{
+header{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 1.5rem;
 }
 
-nav img{
+header img{
     width: 4rem;
 }
 
@@ -18,4 +19,53 @@ nav ul{
     display: flex;
     gap: 2rem;
     list-style: none;
+}
+
+@media (max-width:1366px){
+nav ul{
+    flex-direction: column;
+}
+
+    .abrir-menu,
+    .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  
+    .abrir-menu,
+    .cerrar-menu {
+        background-image: linear-gradient(
+            43deg,
+            #4158d0 0%,
+            #c850c0 46%,
+            #ffcc70 100%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+    }
+  
+    .nav{
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(32, 33, 36);
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(240, 248, 255, 0.5);
+    }
+  
+    .visible {
+      opacity: 1;
+      visibility: visible;
+    }
 }

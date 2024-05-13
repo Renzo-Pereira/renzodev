@@ -5,13 +5,13 @@ const Footer = () => {
         <div>
           <h2>Contact</h2>
           <ul className="footer-list">
-            <li><i class="bi bi-envelope-at-fill"></i> renzoGpereira@gmail.com</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Canelones, Uruguay</li>
+            <li><i className="bi bi-envelope-at-fill"></i> renzoGpereira@gmail.com</li>
+            <li><i className="bi bi-geo-alt-fill"></i> Canelones, Uruguay</li>
             <li>
-              <a href="https://github.com/Renzo-Pereira"><i class="bi bi-github"></i> Renzo Pereira</a>
+              <a href="https://github.com/Renzo-Pereira"><i className="bi bi-github"></i> Renzo Pereira</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/renzo-pereira-832b7724b/"><i class="bi bi-linkedin"></i> Renzo Pereira</a>
+              <a href="https://www.linkedin.com/in/renzo-pereira-832b7724b/"><i className="bi bi-linkedin"></i> Renzo Pereira</a>
             </li>
           </ul>
         </div>

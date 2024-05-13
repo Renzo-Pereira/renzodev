@@ -11,23 +11,23 @@ import Figma from "../../assets/Figma.svg";
 const Main = () => {
   return (
     <main>
-      <section div className="home">
+      <section className="home">
         <div>
           <h2>Hi, I'm Renzo</h2>
           <h1>Frontend Developer</h1>
           <h2>that loves creating web apps</h2>
           <a href="https://www.linkedin.com/in/renzo-pereira-832b7724b/">
             <button>
-              <i class="bi bi-linkedin"></i> LinkedIn
+              <i className="bi bi-linkedin"></i> LinkedIn
             </button>
           </a>
           <a href="https://github.com/Renzo-Pereira">
             <button>
-              <i class="bi bi-github"></i> GitHub
+              <i className="bi bi-github"></i> GitHub
             </button>
           </a>
           <button>
-            <i class="bi bi-filetype-pdf"></i> Download CV
+            <i className="bi bi-filetype-pdf"></i> Download CV
           </button>
         </div>
         <img src={foto} alt="Foto personal" />
