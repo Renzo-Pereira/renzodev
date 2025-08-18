@@ -1,5 +1,66 @@
 @import "./components/navbar/_navbar.scss";
 @import "./components/main/_main.scss";
-@import "./components//footer/_footer.scss"
+@import "./components//footer/_footer.scss";
 
-all
+:root {
+    --primary-color: #2b2c30;
+    --secondary-color: #f0f8ff;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --gradient-primario: linear-gradient(43deg,
+            #4158d0 0%,
+            #c850c0 46%,
+            #ffcc70 100%);
+    --sombras: 0 2px 6px #4158d040,
+        0 4px 10px #c851c033,
+        0 6px 14px #ffcc7026;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+section{
+    padding: 3rem 0;
+}
+
+#header img, footer img{
+  filter: drop-shadow(0 4px 10px #c851c033);
+}
+
+/*********************************************------------------------------Textos-botones------------------------------*********************************************/
+.btn-primary {
+  background-image: var(--gradient-primario);
+  color: var(--secondary-color);
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: var(--sombras);
+}
+
+.linea2,
+h2,
+h3,
+h4 {
+  background-image: var(--gradient-primario);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
