@@ -39,13 +39,13 @@ const Main = () => {
               <span className="linea3">that loves creating web apps</span>
             </h1>
             <div className="d-flex flex-column flex-md-row gap-2 mt-4">
-              <a className="btn btn-primary" href="https://www.linkedin.com/in/renzo-pereira-832b7724b/">
+              <a className="btn btn-primary" href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank">
                 <i className="bi bi-linkedin"></i> LinkedIn
               </a>
-              <a className="btn btn-primary" href="https://github.com/Renzo-Pereira">
+              <a className="btn btn-primary" href="https://github.com/Renzo-Pereira" target="_blank">
                 <i className="bi bi-github"></i> GitHub
               </a>
-              <a className="btn btn-primary" href="">
+              <a className="btn btn-primary" href="/cv.pdf" download target="_blank">
                 <i className="bi bi-filetype-pdf"></i> Download CV
               </a>
             </div>

@@ -32,10 +32,14 @@ const NavBar = () => {
           <li className="nav-item"><a className="nav-link" href="#info">Sobre mí</a></li>
           <li className="nav-item"><a className="nav-link" href="#contacto">Contacto</a></li>
           <li className="nav-item">
-            <i className="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank" className="text-reset text-decoration-none">
+              <i className="bi bi-linkedin"></i>
+            </a>
           </li>
           <li className="nav-item">
-            <i className="bi bi-github"></i>
+            <a href="https://github.com/Renzo-Pereira" target="_blank" className="text-reset text-decoration-none">
+              <i className="bi bi-github"></i>
+            </a>
           </li>
           <li className="nav-item">
             <i className="bi bi-moon-stars-fill"></i>

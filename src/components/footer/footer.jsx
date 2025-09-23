@@ -7,15 +7,17 @@ const Footer = () => {
         <div style={{ maxWidth: "300px" }} className="d-flex flex-column align-items-center">
           <h2>Contacto</h2>
           <ul className="list-unstyled">
-            <li><a href="mailto:renzoGpereira@gmail.com" rel="noopener noreferrer"><i className="bi bi-envelope-at-fill"></i> renzoGpereira@gmail.com</a></li>
             <li>
-              <a href="https://maps.app.goo.gl/wntxzAQ7i1e22aGc7" target="_blank" rel="noopener noreferrer"><i className="bi bi-geo-alt-fill"></i> Canelones, Uruguay</a>
+              <a className="a-footer" href="mailto:renzoGpereira@gmail.com" rel="noopener noreferrer"><i className="icono-footer bi bi-envelope-at-fill"></i> renzoGpereira@gmail.com</a>
             </li>
             <li>
-              <a href="https://github.com/Renzo-Pereira" target="_blank" rel="noopener noreferrer"><i className="bi bi-github"></i> Renzo Pereira</a>
+              <a className="a-footer" href="https://maps.app.goo.gl/wntxzAQ7i1e22aGc7" target="_blank" rel="noopener noreferrer"><i className="icono-footer bi bi-geo-alt-fill"></i> Canelones, Uruguay</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i> Renzo Pereira</a>
+              <a className="a-footer" href="https://github.com/Renzo-Pereira" target="_blank" rel="noopener noreferrer"><i className="icono-footer bi bi-github"></i> Renzo Pereira</a>
+            </li>
+            <li>
+              <a className="a-footer" href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank" rel="noopener noreferrer"><i className="icono-footer bi bi-linkedin"></i> Renzo Pereira</a>
             </li>
           </ul>
           <img src={logo} alt="" className="img-fluid" />
@@ -34,7 +36,7 @@ const Footer = () => {
             cols="30"
             rows="10"
           ></textarea>
-          <input type="submit" className="btn-primary m-0 mt-2"/>
+          <input type="submit" className="btn-primary m-0 mt-2" />
         </form>
       </div>
     </footer>
