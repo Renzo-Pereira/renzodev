@@ -6,6 +6,12 @@
     transition: all 0.8s ease;
 }
 
+@media (min-width: 768px) {
+    #header {
+        font-size: 20px;
+    }
+}
+
 #header::before {
     content: "";
     position: absolute;
@@ -34,4 +40,15 @@
     background-clip: text;
     color: transparent;
     filter: drop-shadow(0 4px 10px #c851c033);
+}
+
+#header.scrolled #nav li a, 
+#header.scrolled #nav li i{
+    color: var(--primary-color);
+}
+
+#header.scrolled #nav li a:hover {
+    color: #c851c0;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }

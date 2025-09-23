@@ -1,4 +1,4 @@
-import foto from "../../assets/perfil.png";
+import foto from "../../assets/perfil.jpeg";
 import proyectoA from "../../assets/coetc.png";
 import proyectoB from "../../assets/magui.png";
 import proyectoC from "../../assets/legion.png";
@@ -18,6 +18,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import coderhouse from "../../assets/coderhouse.jpg";
 import ort from "../../assets/ort.jpg";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const proyectos = [
   { id: 3, img: proyectoA, titulo: "COETC | Web Corporativa", desc: "Re-diseño de la compañia nacional COETC", lenguaje: "JavaScript, CSS, HTML" },
@@ -31,12 +33,19 @@ const Main = () => {
   return (
     <main className="container-fluid">
       <section id="inicio" className="container">
-        <div className="d-flex flex-column-reverse flex-md-row justify-content-md-around gap-5">
+        <div className="d-flex flex-column-reverse flex-md-row align-items-center justify-content-md-around gap-5">
           <div>
             <h1>
-              <span className="linea1">Hi, I'm Renzo</span><br />
-              <span className="linea2">Frontend Developer</span><br />
-              <span className="linea3">that loves creating web apps</span>
+              <TypeAnimation
+                sequence={[
+                  "¡Hola! Soy Renzo\nDesarrollador Frontend\ny me encanta crear sitios webs.",
+                  3000,
+                ]}
+                wrapper="span"
+                speed={50}
+                cursor={true}
+                className="typing-effect"
+              />
             </h1>
             <div className="d-flex flex-column flex-md-row gap-2 mt-4">
               <a className="btn btn-primary" href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank">
@@ -69,13 +78,13 @@ const Main = () => {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 1, // móvil
+              slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2, // tablet
+              slidesPerView: 2,
             },
             1024: {
-              slidesPerView: 4, // desktop
+              slidesPerView: 4,
             },
           }}
         >
@@ -112,15 +121,28 @@ const Main = () => {
       <section id="info" className="container">
         <div className="row">
           <div className="col-12 my-3">
-            <h2>
+            <motion.h2
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               Sobre Mí<span>.</span>
-            </h2>
+            </motion.h2>
+
             <p>
               Me llamo Renzo Pereira, soy un joven de 22 años, estudiante de la carrera de Analista en Tecnologías de la Información en la Universidad de ORT Uruguay, actualmente estoy cursando mi segundo semestre. Estoy buscando mi primera experiencia en el rubro tecnológico para seguir aprendiendo, aportar mis conocimientos y comenzar a construir mi independencia mientras financio mis estudios universitarios.
             </p>
           </div>
           <div className="col-12 col-md-10 d-flex flex-column gap-3 my-3">
-            <h3>Educación</h3>
+            <motion.h3
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            >
+              Educación
+            </motion.h3>
             <article>
               <div>
                 <h4>ORT Uruguay</h4>
@@ -162,16 +184,23 @@ const Main = () => {
             </article>
           </div>
           <div id="stack-tecnologico" className="col-12 col-md-2 d-flex flex-column align-items-center text-center my-3 gap-3">
-            <h3>Mi stack tecnológico</h3>
+            <motion.h3
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            >
+              Mi stack tecnológico
+            </motion.h3>
             <ul className="list-unstyled d-flex gap-2 flex-wrap justify-content-center">
-            <li><img className="img-fluid" src={HTML} alt="HTML logo" /></li>
-            <li><img className="img-fluid" src={CSS} alt="CSS logo" /></li>
-            <li><img className="img-fluid" src={Sass} alt="Sass logo" /></li>
-            <li><img className="img-fluid" src={ReactJS} alt="React logo" /></li>
-            <li><img className="img-fluid" src={Figma} alt="Figma logo" /></li>
-            <li><img className="img-fluid" src={firebase} alt="Firebase logo" /></li>
-            <li><img src={git} alt="Git logo" /></li>
-            <li><img src={GitHub} alt="GitHub logo" /></li>
+              <li><img className="img-fluid" src={HTML} alt="HTML logo" /></li>
+              <li><img className="img-fluid" src={CSS} alt="CSS logo" /></li>
+              <li><img className="img-fluid" src={Sass} alt="Sass logo" /></li>
+              <li><img className="img-fluid" src={ReactJS} alt="React logo" /></li>
+              <li><img className="img-fluid" src={Figma} alt="Figma logo" /></li>
+              <li><img className="img-fluid" src={firebase} alt="Firebase logo" /></li>
+              <li><img src={git} alt="Git logo" /></li>
+              <li><img src={GitHub} alt="GitHub logo" /></li>
             </ul>
           </div>
         </div>

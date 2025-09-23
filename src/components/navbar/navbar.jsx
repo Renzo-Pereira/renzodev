@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 import logo from "../../assets/Logo Renzo Developer.png";
 
 const NavBar = () => {
@@ -22,12 +23,25 @@ const NavBar = () => {
 
   return (
     <header id="header" className="container-fluid">
-      <nav className="row align-items-center" id="nav">
+      <motion.nav
+        id="nav"
+        className="row align-items-center justify-content-between"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
         <div className="col-12 col-md-2 d-flex align-items-center justify-content-center justify-content-md-start">
-          <a href="#inicio"><img className="img-fluid" src={logo} alt="logo" style={{ maxWidth: "80px", height: "auto" }} /></a>
+          <a href="#inicio">
+            <img
+              className="img-fluid"
+              src={logo}
+              alt="logo"
+              style={{ maxWidth: "80px", height: "auto" }}
+            />
+          </a>
         </div>
-        <ul className="col-12 col-md-10 nav-list list-unstyled d-flex gap-3 justify-content-end text-center">
-          <li className="nav-item"><a className="nav-link" href="#inicio">Inicio</a></li>
+        <ul className="col-12 col-md-9 nav-list list-unstyled d-flex gap-3 justify-content-center justify-content-md-end text-center m-0 p-0 me-md-3">
+          <li className="nav-item d-none d-md-block"><a className="nav-link" href="#inicio">Inicio</a></li>
           <li className="nav-item"><a className="nav-link" href="#proyectos">Proyectos</a></li>
           <li className="nav-item"><a className="nav-link" href="#info">Sobre mí</a></li>
           <li className="nav-item"><a className="nav-link" href="#contacto">Contacto</a></li>
@@ -41,11 +55,8 @@ const NavBar = () => {
               <i className="bi bi-github"></i>
             </a>
           </li>
-          <li className="nav-item">
-            <i className="bi bi-moon-stars-fill"></i>
-          </li>
         </ul>
-      </nav>
+      </motion.nav>
     </header>
   );
 };
