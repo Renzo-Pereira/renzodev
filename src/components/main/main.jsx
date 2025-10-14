@@ -1,5 +1,5 @@
 import foto from "../../assets/perfil.jpeg";
-import proyectoA from "../../assets/coetc.png";
+import proyectoA from "../../assets/lucialamoda.png";
 import proyectoB from "../../assets/magui.png";
 import proyectoC from "../../assets/legion.png";
 import proyectoD from "../../assets/elubosa.png";
@@ -22,11 +22,11 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const proyectos = [
-  { id: 3, img: proyectoA, titulo: "COETC | Web Corporativa", desc: "Re-diseño de la compañia nacional COETC", lenguaje: "JavaScript, CSS, HTML" },
-  { id: 3, img: proyectoB, titulo: "Magui Estilista | Web Corporativa", desc: "Un sitio web para una estilista que ofrece sus servicios y trabajos realizados.", lenguaje: "JavaScript, CSS, HTML" },
-  { id: 1, img: proyectoC, titulo: "Elubo SA | Catalogo Web", desc: "Un sitio web para poder ver los articulos, las ofertas y ultimas noticias de esta conocida tienda de ropa.", lenguaje: "React Js, Scss, JavaScript, HTML" },
-  { id: 2, img: proyectoD, titulo: "Elubo SA | Web Administrativa", desc: "Creado para trabajar en conjunto a 'https://legionuy.vercel.app'. Su función es la de administrar el catalogo online y ver las consultas realizadas por los clientes.", lenguaje: "React Js, Scss, JavaScript, HTML" },
-  { id: 3, img: proyectoE, titulo: "Umapetshop | Ecommerce", desc: "Dedicado a todos los amantes de las mascotas, he creado este ecommerce para lucir los articulos a la vente y poder realizar pedidos!", lenguaje: "React Js, Scss, JavaScript, HTML" },
+  { id: 1, img: proyectoA, titulo: "Luci a la moda | Catalogo Web", desc: "Catalogo de productos de moda, administrada con una web paralela", lenguaje: "React JS, Firebase, Scss" },
+  { id: 2, img: proyectoB, titulo: "Magui Estilista | Web Corporativa", desc: "Un sitio web para una estilista que ofrece sus servicios y trabajos realizados.", lenguaje: "JavaScript, CSS, HTML" },
+  { id: 3, img: proyectoC, titulo: "Elubo SA | Catalogo Web", desc: "Un sitio web para poder ver los articulos, las ofertas y ultimas noticias de esta conocida tienda de ropa.", lenguaje: "React Js, Scss, JavaScript, HTML" },
+  { id: 4, img: proyectoD, titulo: "Elubo SA | Web Administrativa", desc: "Su función es la de administrar el catalogo online y ver las consultas realizadas por los clientes.", lenguaje: "React Js, Scss, JavaScript, HTML" },
+  { id: 5, img: proyectoE, titulo: "Umapetshop | Ecommerce", desc: "Dedicado a todos los amantes de las mascotas, he creado este ecommerce para lucir los articulos a la vente y poder realizar pedidos!", lenguaje: "React Js, Scss, JavaScript, HTML" },
 ];
 
 const Main = () => {
