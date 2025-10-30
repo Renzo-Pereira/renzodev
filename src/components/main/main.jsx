@@ -1,4 +1,4 @@
-import foto from "../../assets/perfil.jpeg";
+import foto from "../../assets/perfil.jpg";
 import proyectoA from "../../assets/lucialamoda.png";
 import proyectoB from "../../assets/magui.png";
 import proyectoC from "../../assets/legion.png";
@@ -48,13 +48,13 @@ const Main = () => {
               />
             </h1>
             <div className="d-flex flex-column flex-md-row gap-2 mt-4">
-              <a className="btn btn-primary" href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank">
+              <a className="btn btn-primary" href="https://www.linkedin.com/in/renzo-pereira-832b7724b/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin"></i> LinkedIn
               </a>
-              <a className="btn btn-primary" href="https://github.com/Renzo-Pereira" target="_blank">
+              <a className="btn btn-primary" href="https://github.com/Renzo-Pereira" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-github"></i> GitHub
               </a>
-              <a className="btn btn-primary" href="/cv.pdf" download target="_blank">
+              <a className="btn btn-primary" href="/CurriculumVitae_RenzoPereira2.pdf" download target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-filetype-pdf"></i> Download CV
               </a>
             </div>
